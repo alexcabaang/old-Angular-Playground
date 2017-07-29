@@ -1,0 +1,6 @@
+1. git init
+2. git remote add origin https://github.com/alexcabaang/VehicleReg.git
+3. git remote -v
+4. git add -A
+5. git push origin master
+6. 
