@@ -3,13 +3,12 @@ var angularApp = angular.module('angularApp', []);
 
 // CONTROLLERS
 angularApp.controller('mainController', function ($scope) {
-    $scope.name = 'Jane Doe';
-    $scope.occupation = 'Coder';
-    $scope.getname = function() {
-        return 'John Doe';
-    }
     console.log($scope);
 });
 
+var searchPeople = function(firstname, $scope, lastname, height, occupation) {
+    return 'Jane Doe';
+}
 
+console.log(angular.injector().annotate(searchPeople));
 
