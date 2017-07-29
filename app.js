@@ -2,14 +2,11 @@
 var angularApp = angular.module('angularApp', []);
 
 // CONTROLLERS
-angularApp.controller('mainController', function ($scope) {
-    $scope.name = 'Jane Doe';
-    $scope.occupation = 'Coder';
-    $scope.getname = function() {
-        return 'John Doe';
-    }
-    console.log($scope);
+angularApp.controller('mainController', function () {
+
 });
 
+var things = [1,2,3, 'Alex', function(){alert("Hello Alex")}];
 
-
+console.log(things);
+things[4]();
